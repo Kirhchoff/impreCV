@@ -1,0 +1,51 @@
+.impress-enabled .step .slide{
+  transform: scale(0, 0);
+  -ms-transform: scale(0, 0);
+  -webkit-transform: scale(0, 0);
+
+  -webkit-transition: transform 1s ease-in;
+  -moz-transition:    transform 1s ease-in;
+  transition:         transform 1s ease-in;
+  
+  background: silver;
+  padding: 3%;
+  width: 608px;
+  height: 380px;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+.impress-enabled .step.active .slide{
+  transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  -webkit-transform: scale(1, 1);
+}
+
+body {
+    background: url("../images/background.jpg") left top no-repeat;
+    background-size: cover;
+    background-color: blue;
+}
+
+.my-face {
+  -ms-transform: rotate(8deg);
+  -webkit-transform: rotate(8deg);
+  transform: rotate(8deg);
+  margin-top: 2%;
+  border-radius: 2%;
+  max-height:280px;
+  float: right;
+}
+.my-face: after {
+  clear: both;
+}
+
+.nokia {
+  max-height: 80px;
+  margin: 5px auto;
+}
+.game {
+  max-height: 220px;
+}
+.media {
+  margin: 10px;
+}
